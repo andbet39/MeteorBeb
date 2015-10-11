@@ -132,6 +132,6 @@ angular.module("meteorbeb")
                     }
                 });
 
-            $urlRouterProvider.otherwise("/login    ");
+            $urlRouterProvider.otherwise("/reservations");
         }]);
 

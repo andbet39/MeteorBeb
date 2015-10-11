@@ -13,8 +13,38 @@
     </ol>
 </section>
 
+
 <!-- Main content -->
-<section class="content">
+<section class="content"><div class="row">
+    <div class="col-md-4 col-sm-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="fa fa-euro"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">Totale</span>
+                <span class="info-box-number">{{earnings | currency:' € '}}</span>
+            </div><!-- /.info-box-content -->
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="fa fa-bed"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">Letti</span>
+                <span class="info-box-number">{{room_nights}}</span>
+            </div><!-- /.info-box-content -->
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <div class="info-box">
+            <span class="info-box-icon bg-navy"><i class="fa fa-euro"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">Media persona</span>
+                <span class="info-box-number">{{earnings/room_nights | currency:' € '}}</span>
+            </div><!-- /.info-box-content -->
+        </div>
+    </div>
+</div>
+
     <div class="row">
         <div class="col-md-12">
             <div class="box box-success">
